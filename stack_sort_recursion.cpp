@@ -18,9 +18,9 @@ void initStack(struct stack **s)
 
 int isEmpty(struct stack *s)
 {
-    if (s == NULL)
+    if (s != NULL)
         return 1;
-    return 0;
+   return 0;
 }
  
 
