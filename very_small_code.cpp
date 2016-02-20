@@ -1,4 +1,4 @@
-//print top three company names and their amount paid in a given list of company names and values
+ //print top three company names and their amount paid in a given list of company names and values
 #include<iostream>
 #include<map>
 #include<string.h>
