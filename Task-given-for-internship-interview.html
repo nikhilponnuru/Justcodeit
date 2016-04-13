@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#team-members {
+    line-height:30px;
+    background-color:white;
+    height:600px;
+    width:250px;
+    float:left;
+    padding:5px;	      
+}
+#user-home{
+    width:500px;
+    float:left;
+    padding:10px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+.TM{
+      height:70px;
+    width:240px;
+    
+}
+
+.img-circle {
+    border-radius: 70%;
+    
+}
+
+.divider{
+    position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left:1px solid black;
+    height: 500px;
+}
+
+
+.whatever{
+    background-color: #808080;
+    display: inline-block;
+    width: 500px;
+    height: 70px;
+}
+
+#checkboxes input[type=checkbox]{
+    display: none;
+}
+#checkboxes input[type=checkbox]:checked + .whatever{
+    background-color:white;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="header">
+<div class="container">
+  <h3>Tabs</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#" data-toggle="tab">Menu 1</a></li>
+    <li><a href="#" id='call'>CALL</a></li>
+   
+  </ul>
+  </div>
+</div>
+
+<div id="user-home" >
+<h2>London</h2>
+
+</div>
+
+<div class="divider">
+</div>
+<div id="team-members">
+
+
+
+  <div class="TM" id='checkboxes' onclick="do_action()" >
+    <input type="checkbox" name="rGroup" value="1" id="r1" checked="checked" />
+    <label class="whatever" for="r1" id="for_name_display"><a href="#" >
+     <img src="1.png" class="img-circle" width="70" height="70"> 
+    </a>USER!</label>
+
+
+
+    
+    
+  </div>
+
+  
+
+
+</div>
+<script type="text/javascript">
+    
+    function do_action(){
+        document.getElementByID("user-home")..innerHTML='<object type="t/html" data="user1.html" ></object>';
+    }
+
+
+</script>
+
+
+
+ <script type="text/javascript">
+          document.getElementById("call").addEventListener("click", function(){
+    alert("fcu");
+});
+  </script>
+</body>
+</html>
